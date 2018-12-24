@@ -53,6 +53,8 @@ import {
   TestDashboardComponent
 } from './test-dashboard/test-dashboard.component';
 import { TestTreeComponent } from './test-tree/test-tree.component';
+import { TestDragDropComponent } from './test-drag-drop/test-drag-drop.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -61,7 +63,8 @@ import { TestTreeComponent } from './test-tree/test-tree.component';
     NavbarComponent,
     TestTableComponent,
     TestDashboardComponent,
-    TestTreeComponent
+    TestTreeComponent,
+    TestDragDropComponent
   ],
   imports: [
     BrowserModule,
@@ -85,7 +88,8 @@ import { TestTreeComponent } from './test-tree/test-tree.component';
     MatSortModule,
     MatGridListModule,
     MatMenuModule,
-    MatTreeModule
+    MatTreeModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
